@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --clr-primary1 : hsl(205, 86%, 17%);
+    --clr-primary2 : hsl(205, 78%, 60%);
+    --box-shadow : 0 5px 15px rgba(0, 0, 0, 0.2);
+    --clr-black : hsl(0, 0%, 0%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+nav{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-centre{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+h4{
+    display: inline;
+    margin-bottom: 0;
+    color: var(--clr-primary2);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--clr-primary1);
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 3rem);
+    background-color: #F1F5F8;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2.5rem;
+    background-color: var(--clr-black);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--clr-primary2);
+    text-transform: uppercase;
+}
+
+.btn{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid var(--clr-black);
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    /* letters */
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+
+}
+
+.btn:hover{
+    background: var(--clr-black);
+    color: white;
+}
+
+@media screen and (max-width: 460px){
+    .container h2{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 1.2rem;
+    }
+    ul{
+        width : 40%;
+    }
+}
